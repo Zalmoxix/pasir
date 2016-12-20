@@ -1,0 +1,77 @@
+{% extends 'systemimager/base.html' %}
+{% load staticfiles %}
+
+{% block titulo1 %}
+<h2>Systemimager</h2>
+<p>Gestion de funcionalidades</p>
+{% endblock %}
+
+
+{% block block1 %}
+<div class="container">
+					<div class="row">
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-file-image-o major"></i>
+								<a class="button button-primary" href="/imagenes">Nueva imagen</a>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-files-o major"></i>
+								<a class="button button-primary" href="/versiones">Nueva version</a>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-desktop major"></i>
+								<a class="button button-primary" href="/equipos">Reg. equipos</a>
+							</section>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row">
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-code major"></i>
+								<a class="button button-primary" href="/scripts">Act. equipo</a>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-code major"></i>
+								<a class="button button-primary" href="/scripts">Edit. scripts</a>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-list major"></i>
+								<a class="button button-primary" href="/logs">Edit. logs</a>
+							</section>
+						</div>
+						
+					</div>
+				<div class="row">
+						
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-users major"></i>
+								<a class="button button-primary" href="/grupos">Nuevo grupo</a>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-desktop major"></i>
+								<a class="button button-primary" href="/equipos">*</a>
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa fa-list major"></i>
+								<a class="button button-primary" href="/logs">*</a>
+							</section>
+						</div>
+					</div>
+				</div>
+{% endblock %}

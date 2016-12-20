@@ -1,0 +1,21 @@
+{% extends 'systemimager/base.html' %}
+{% load staticfiles %}
+
+{% block titulo1 %}
+<h2>Systemimager</h2>
+<p>Gestion de equipos</p>
+{% endblock %}
+
+{% block block1 %}
+<form action="." method="post">
+{% csrf_token %}
+{{ form.as_ul }}
+<input type="submit" value="Submit" />
+</form>     
+{% endblock %}
+
+
+{% block titulo2 %}
+<h2>Regresar a gestion de funcionalidades</h2>
+<a class="button" href="/systemimager">Indice</a>
+{% endblock %}

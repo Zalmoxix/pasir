@@ -1,0 +1,16 @@
+h1 {
+font-family: 'Lobster';       
+color: #FCA205;
+   }
+
+li a {
+    color: red;
+}
+li a:visited {
+    color: green;
+}
+body {
+	background: white url("images/background.jpg") no-repeat;
+	background-size:cover;
+	padding-left: 15px;
+}

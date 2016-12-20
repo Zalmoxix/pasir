@@ -1,0 +1,136 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SYSTEMIMAGER</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="/static/js/jquery.min.js"></script>
+		<script src="/static/js/skel.min.js"></script>
+		<script src="/static/js/skel-layers.min.js"></script>
+		<script src="/static/js/init.js"></script>
+		<script src="/static/smart-selects/admin/js/chainedfk.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/static/css/skel.css" type="text/css"/>
+		<link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="/static/css/style-xlarge.css" type="text/css"/>
+
+		
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">Ion</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="left-sidebar.html">Left Sidebar</a></li>
+						<li><a href="right-sidebar.html">Right Sidebar</a></li>
+						<li><a href="no-sidebar.html">No Sidebar</a></li>
+						<li><a href="#" class="button special">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h2>SystemImager</h2>
+					<p>Interfaz de administración</p>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>Ipsum feugiat consequat</h2>
+					<p>Tempus adipiscing commodo ut aliquam blandit</p>
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							{% block block1 %}
+							{% endblock %}
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<header class="major">
+					<h2>Ipsum feugiat consequat</h2>
+					<p>Tempus adipiscing commodo ut aliquam blandit</p>
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							{% block content %}
+							{% endblock %}
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							{% block content %}
+							{% endblock %}
+						</div>
+					</div>
+				</div>
+			</section>			
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<div class="6u">
+							<div class="row collapse-at-2">
+								<div class="6u">
+									<h3>Accumsan</h3>
+									<ul class="alt">
+										<li><a href="#">Nascetur nunc varius</a></li>
+										<li><a href="#">Vis faucibus sed tempor</a></li>
+										<li><a href="#">Massa amet lobortis vel</a></li>
+										<li><a href="#">Nascetur nunc varius</a></li>
+									</ul>
+								</div>
+								<div class="6u">
+									<h3>Faucibus</h3>
+									<ul class="alt">
+										<li><a href="#">Nascetur nunc varius</a></li>
+										<li><a href="#">Vis faucibus sed tempor</a></li>
+										<li><a href="#">Massa amet lobortis vel</a></li>
+										<li><a href="#">Nascetur nunc varius</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="6u">
+							<h2>Aliquam Interdum</h2>
+							<p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>

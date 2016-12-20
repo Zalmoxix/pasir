@@ -1,0 +1,9 @@
+#1 {
+	color:red;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:300;
+    padding-left:300;
+}
+               

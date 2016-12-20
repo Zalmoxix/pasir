@@ -1,0 +1,40 @@
+{% extends 'systemimager/base.html' %}
+{% load staticfiles %}
+
+{% block titulo1 %}
+<h2>Systemimager</h2>
+<p>Gestion de scripts</p>
+{% endblock %}
+
+<style>
+.CodeMirror { height: auto; border: 1px solid #ddd; }
+.CodeMirror-scroll { max-height: 200px; }
+.CodeMirror pre { padding-left: 7px; line-height: 1.25; }
+</style>
+
+<script src="/static/codemirror2/lib/codemirror.js"></script>
+<link rel="stylesheet" href="/static/codemirror2/lib/codemirror.css">
+<script src="/static/codemirror2/mode/javascript/javascript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/static/smart-selects/admin/js/chainedfk.js" type="text/javascript"></script>
+
+<script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("id_css"), {
+      lineNumbers: true,
+      mode: "Shell",
+      matchBrackets: true
+    });
+</script>
+
+{% block block1 %}
+<form action="." method="post">
+{% csrf_token %}
+{{ form.as_ul }}
+<input type="submit" value="Submit" />
+</form>     
+{% endblock %}
+
+{% block titulo2 %}
+<h2>Regresar a gestion de funcionalidades</h2>
+<a class="button" href="/systemimager">Indice</a>
+{% endblock %}

@@ -1,0 +1,22 @@
+Using "parted" to gather information about disk:
+    /dev/sda
+
+Starting or re-starting rsync as a daemon.....
+done!
+
+This client is ready to have its image retrieved.  You must now run 
+the "si_getimage" command on your imageserver.
+
+Automatically create configuration file for systemconfigurator:
+  >> /etc/systemconfig/systemconfig.conf
+Using "parted" to gather information about disk:
+    /dev/sda
+
+Starting or re-starting rsync as a daemon.....
+done!
+
+This client is ready to have its image retrieved.  You must now run 
+the "si_getimage" command on your imageserver.
+
+Automatically create configuration file for systemconfigurator:
+  >> /etc/systemconfig/systemconfig.conf

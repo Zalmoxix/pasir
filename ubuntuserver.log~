@@ -1,0 +1,4 @@
+Failed to retrieve /etc/systemimager/mounted_filesystems from 192.168.3.109.
+si_getimage: Have you run "si_prepareclient" on 192.168.3.109?
+          If you see the message "unrecognised option" above, check
+          http://systemimager.org/download/ to be sure that you are running

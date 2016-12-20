@@ -1,0 +1,216 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SYSTEMIMAGER</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="/static/js/jquery.min.js"></script>
+		<script src="/static/js/skel.min.js"></script>
+		<script src="/static/js/skel-layers.min.js"></script>
+		<script src="/static/js/init.js"></script>
+		<script src="/static/smart-selects/admin/js/chainedfk.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="/static/css/skel.css" type="text/css"/>
+		<link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="/static/css/style-xlarge.css" type="text/css"/>
+
+		
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="#">Ion</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="left-sidebar.html">Left Sidebar</a></li>
+						<li><a href="right-sidebar.html">Right Sidebar</a></li>
+						<li><a href="no-sidebar.html">No Sidebar</a></li>
+						<li><a href="#" class="button special">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h2>SystemImager</h2>
+					<p>Interfaz de administración</p>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>Ipsum feugiat consequat</h2>
+					<p>Tempus adipiscing commodo ut aliquam blandit</p>
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-area-chart major"></i>
+								<h3>Administracion de imagenes</h3>
+								<form class="imagen" method="POST" action="">
+									{% csrf_token %}
+									{{ forms.imagen }}
+									<button name='action' value='imagen' type="submit">Submit</button>
+								</form>   
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-refresh major"></i>
+								<h3>Administracion de versiones</h3>
+								<form class="version" method="POST" action="">
+									{% csrf_token %}
+									{{ forms.version }}
+									<button name='action' value='version' type="submit">Submit</button>
+								</form> 
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-cog major"></i>
+								<h3>Administracion de grupos</h3>
+								<form class="grupo" method="POST" action="">
+									{% csrf_token %}
+									{{ forms.grupo }}
+									<button name='action' value='grupo' type="submit">Submit</button>
+								</form> 
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<header class="major">
+					<h2>Ipsum feugiat consequat</h2>
+					<p>Tempus adipiscing commodo ut aliquam blandit</p>
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-area-chart major"></i>
+								<h3>Administracion de scripts</h3>
+								<form class="script" method="POST" action="">
+									{% csrf_token %}
+									{{ forms.script }}
+									<button name='action' value='script' type="submit">Submit</button>
+								</form>   
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-refresh major"></i>
+								<h3>Administracion de equipos</h3>
+								<form class="equipo" method="POST" action="">
+									{% csrf_token %}
+									{{ forms.equipo }}
+									<button name='action' value='equipo' type="submit">Submit</button>
+								</form> 
+							</section>
+						</div>
+						<div class="4u">
+							<section class="special box">
+								<i class="icon fa-cog major"></i>
+								<h3>Administracion de logs</h3>
+								<form class="log" method="POST" action="">
+									{% csrf_token %}
+									{{ forms.log }}
+									<button name='action' value='log' type="submit">Submit</button>
+								</form> 
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<h2>Mollis ut adipiscing</h2>
+								<a href="#" class="image fit"><img src="/static/images/pic03.jpg" alt="" /></a>
+								<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<h3>Magna massa blandit</h3>
+								<p>Feugiat amet accumsan ante aliquet feugiat accumsan. Ante blandit accumsan eu amet tortor non lorem felis semper. Interdum adipiscing orci feugiat penatibus adipiscing col cubilia lorem ipsum dolor sit amet feugiat consequat.</p>
+								<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+							<hr />
+							<section>
+								<h3>Ante sed commodo</h3>
+								<ul class="alt">
+									<li><a href="#">Erat blandit risus vis adipiscing</a></li>
+									<li><a href="#">Tempus ultricies faucibus amet</a></li>
+									<li><a href="#">Arcu commodo non adipiscing quis</a></li>
+									<li><a href="#">Accumsan vis lacinia semper</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>			
+			
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<div class="6u">
+							<div class="row collapse-at-2">
+								<div class="6u">
+									<h3>Accumsan</h3>
+									<ul class="alt">
+										<li><a href="#">Nascetur nunc varius</a></li>
+										<li><a href="#">Vis faucibus sed tempor</a></li>
+										<li><a href="#">Massa amet lobortis vel</a></li>
+										<li><a href="#">Nascetur nunc varius</a></li>
+									</ul>
+								</div>
+								<div class="6u">
+									<h3>Faucibus</h3>
+									<ul class="alt">
+										<li><a href="#">Nascetur nunc varius</a></li>
+										<li><a href="#">Vis faucibus sed tempor</a></li>
+										<li><a href="#">Massa amet lobortis vel</a></li>
+										<li><a href="#">Nascetur nunc varius</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="6u">
+							<h2>Aliquam Interdum</h2>
+							<p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
+							<ul class="icons">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
